@@ -47,11 +47,11 @@ void alertInCelcius(enum environment env, float farenheit)
 
 int main()
 {
-    alertInCelcius(0, 400.5);
+    alertInCelcius(Test, 400.5);
     assert(alertFailureCount == 0);
-    alertInCelcius(0, 303.6);
+    alertInCelcius(Test, 303.6);
     assert(alertFailureCount == 0);
-    alertInCelcius(0, 1473.8);
+    alertInCelcius(Test, 1473.8);
     assert(alertFailureCount == 1);
     printf("%d alerts failed.\n", alertFailureCount);
     printf("All is well (maybe!)\n");
